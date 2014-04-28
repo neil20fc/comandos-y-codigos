@@ -22,6 +22,7 @@ para las ñ y tildes:
 
 SHH
 ====
+ssh login:contraseña@Maquina-a-la-que-queremos-conectarnos 
 
 FTP
 ===
