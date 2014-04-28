@@ -68,4 +68,23 @@ openpanel-cli
 [openpanel]% password user openpanel-admin
 
 
+PHPMYADMIN
+===========
+
+para instalcion 
+
+sudo apt-get install phpmyadmin
+
+sudo gedit /etc/apache2/httpd.conf
+
+Include /etc/phpmyadmin/apache.conf 
+
+sudo /etc/init.d/apache2 restart 
+
+
+
+
+
+
+
 
