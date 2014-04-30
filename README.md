@@ -10,7 +10,38 @@ exportar del servidor.
 mysqldump -u usuario -pcontraseña nombre-base-de-datos > fichero-exportacion.sql
 
 importar al servidor.
-mysql -u usuario -pcontraseña nombre-base-de-datos < fichero-importacion.sql
+mysql -u usuario -pcontraseña nombre-base-de-datos < fichero-importacion.sqlHow to Backup a MySQL Database
+
+To backup a MySQL database, the database first has to exist in the database server and you have access to that server as well. You can use SSH or Telnet to login to the remote server if you do not have remote desktop to it. The command to backup a MySQL database as follows:
+
+
+1
+mysqldump -u [username] –p[password] [database_name] > [dump_file.sql]
+The parameter of the command above as follows:
+
+[username]: valid MySQL username.
+[password]: valid password for the user. Note that there is no space between –p and the password.
+[database_name]: database name you want to backup
+[dump_file.sql]: dump file you want to generate.
+By executing the above command all database structure and data will be exported into a single [dump_file.sql] dump file. For example, in order to back our sample database classicmodels, we use the following command:
+
+
+1
+mysqldump -u mysqltutorial –psecret  classicmodels > c:\temp\backup001.sql
+How to Backup MySQL Database Structure Only
+
+If you only want to backup database structure only you just need to add an option –no-data to tell mysqldump that only database structure need to export as follows:
+
+
+1
+mysqldump -u [username] –p[password] –no-data [database_name] > [dump_file.sql]
+For example to backup our sample database with structure only, you use the following command:
+
+
+1
+mysqldump -u mysqltutorial –psecret  -no-data classicmodels > c:\temp\backup002.sql
+
+
 
 
 HTML
