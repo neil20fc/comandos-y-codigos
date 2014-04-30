@@ -41,7 +41,7 @@ For example to backup our sample database with structure only, you use the follo
 1
 mysqldump -u mysqltutorial –psecret  -no-data classicmodels > c:\temp\backup002.sql
 
-
+mysqldump -u [username] –p[password] –no-create-info [database_name] > [dump_file.sql]
 
 
 HTML
