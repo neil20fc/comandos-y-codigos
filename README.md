@@ -1,6 +1,8 @@
 comandos-y-codigos
 ==================
-
+tar
+=====
+tar xvf archivo.tar
 
 MYSQL:
 ======
