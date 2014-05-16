@@ -116,6 +116,12 @@ sudo /etc/init.d/apache2 restart
 
 
 
+SCP
+===
+copiar documentos de un a entre servidores
+scp -r(si son mas de un archivo) usuario1@ip1:direc1  usuraio2@ip2@direc2
+
+
 
 
 
