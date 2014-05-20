@@ -1,5 +1,15 @@
 comandos-y-codigos
 ==================
+
+Ubuntu
+=======
+
+apt-get update
+
+apt-get upgrade
+
+sudo apt-get dist-upgrade
+
 tar
 =====
 tar xvf archivo.tar
