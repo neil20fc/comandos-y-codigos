@@ -56,6 +56,26 @@ mysqldump -u mysqltutorial –psecret  -no-data classicmodels > c:\temp\backup00
 mysqldump -u [username] –p[password] –no-create-info [database_name] > [dump_file.sql]
 
 
+------------habilitar acceso remoto a Base de datos mysql------------------
+
+linux 
+ /etc/mysql  (my.cnf)
+ 
+windows 
+
+my.ini
+
+
+->bind-address = 127.0.0.1 cambiar por bind-address = 0.0.0.0
+
+luego ejecutar msql como root
+->grant all privileges on *.* to 'usuario'@'%' identified by 'password' with grant option;
+
+ y por ultimo resetear MYSQL
+ 
+ 
+/etc/init.d/mysql restart
+
 HTML
 ====
 
