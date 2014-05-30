@@ -69,7 +69,7 @@ my.ini
 ->bind-address = 127.0.0.1 cambiar por bind-address = 0.0.0.0
 
 luego ejecutar msql como root
-->grant all privileges on *.* to 'usuario'@'%' identified by 'password' with grant option;
+->"grant all privileges on *.* to 'usuario'@'%' identified by 'password' with grant option";
 
  y por ultimo resetear MYSQL
  
